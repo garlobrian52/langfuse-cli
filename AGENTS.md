@@ -1,4 +1,4 @@
-# AGENTS.md
+# Cursor Cloud Development Instructions
 
 ## Cursor Cloud specific instructions
 
@@ -16,7 +16,7 @@ This is `langfuse-cli` — a CLI tool for interacting with the Langfuse API. It 
 | Task | Command |
 |---|---|
 | Install deps | `bun install` |
-| Build | `bun run build` (fetches latest OpenAPI spec + bundles `src/cli.ts` → `dist/cli.js`) |
+| Build | `bun run build` (fetches and patches the latest OpenAPI spec + bundles `src/cli.ts` → `dist/cli.js`) |
 | Run CLI | `node bin/langfuse.mjs` |
 | Patch OpenAPI only | `bun run patch-openapi` |
 | Refetch OpenAPI | `bun run refetch-openapi` |
